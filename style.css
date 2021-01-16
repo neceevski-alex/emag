@@ -1,0 +1,116 @@
+html,body {
+    height: 100%
+}
+body {
+    font-family: 'lato', sans-serif;
+}
+* {
+    margin: 0;
+    padding: 0;
+    color:#222222;
+}
+
+/*footer fixation-5*/
+.container {
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+}
+.main {
+	flex: 1 0 auto;
+}
+footer {
+	flex: 0 0 auto;
+}
+/*!footer fixation-5*/
+.string {
+    padding: 0 230px;
+}
+.menu-item {
+    list-style-type: none;
+    /*float: left;*/
+    display: inline-block;
+}
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+a:link, a:hover, a:active, a:visited {
+    text-decoration:none;
+    color:#222222;
+}
+.container {
+    max-width: 1600px;
+    margin: 0 auto;
+    
+}
+.flex-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center
+}
+/*Header*/
+header>div{
+    height: 100px;
+}
+#logo{
+font-size: 27px;
+line-height: 32px;
+font-weight: 300;
+letter-spacing: 0.025em;
+color: #222222;
+}
+#logo>a>img{
+    position: relative;
+    top: 25px;
+}
+#logo>a>span{
+    position: relative;
+    top: 15px;
+}
+header>div>* {display: inline-block; margin: auto 0}
+#browse {
+    background-image: url("img\browse-bkgd.jpg");
+    width: 87px;height: 38px;background-color: #cdcdcc; border: 1px solid #e6e6e6;border-radius: 3px 0px 0px 3px;
+    margin-left: 37px;
+    font-size: 14px;line-height: 38px;font-weight: 300;letter-spacing: 0.025em;
+    padding-left: 14px;
+}
+form#search>input{display: inline-block;}
+form#search>input[name="term"] {width:280px; height: 38px;}
+form#search>input[type="image"] {
+    position: relative;
+    top: 15px;
+    border: 1px solid black;
+}
+div#account{
+    
+}
+#account {
+}
+#account #backet {
+}
+#account img, #account #count {
+    display: inline-block;
+}
+#account img {
+	position: relative;
+	top: 21px;
+}
+#account #count {
+    width: 19px;height: 19px;background-color: #f16d7f;
+    font-size: 12px;line-height: 19px;font-weight: 700; color: #ffffff;
+    text-align: center;
+    border-radius: 9px;
+}
+#account #myac {
+    background-image: url("img/myac-bkgd.jpg");
+    margin: 31px 0 0 17px;
+    padding: 13px 12px 11px 19px;
+    color: #ffffff;
+}
+#account .fa {
+}
+#account .fa
