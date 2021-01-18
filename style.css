@@ -48,9 +48,12 @@ a:link, a:hover, a:active, a:visited {
 .flex-container {
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-around;
     align-items: center
 }
+.around {
+    justify-content: space-around;
+}
+between {justify-content: between;}
 /*Header*/
 header>div{
     height: 100px;
@@ -85,13 +88,6 @@ form#search>input[type="image"] {
     top: 15px;
     border: 1px solid black;
 }
-div#account{
-    
-}
-#account {
-}
-#account #backet {
-}
 #account img, #account #count {
     display: inline-block;
 }
@@ -118,6 +114,7 @@ div#lux-fashion {
     height: 613px;
     background-image: url("img/lux-fashion-bkgd.jpg");
     background-position: right;
+    margin-bottom: 100px;
 }
 div#lux-fashion>div {
     border-left:12px solid #f16d7f;
@@ -126,3 +123,27 @@ div#lux-fashion>div {
     position: relative;
     top: 224px
 }
+/*div#offerts styling*/
+div#offerts>div>div {position: relative;}
+div#offerts div.left div.up {margin: 0 10px 10px 0}
+div#offerts div.left div.down {margin: 10px 10px 0 0}
+div#offerts div.right div.up {margin: 0 0 10px 10px}
+div#offerts div.right div.down {margin: 10px 0 0 10px}
+@media screen and (max-device-width: 1599px)  {
+    div#offerts div.left div.up, div#offerts div.left div.down, 
+    div#offerts div.right div.up, div#offerts div.right div.down {margin: 10px}
+}
+a.text_offert {
+    display: block;
+    position: absolute;
+    top: 26px;
+    width: 175px;
+    height: 82px;
+    background-color: #ffffff;
+padding: 16px 20px 0 19px;
+    font-size: 18px;line-height: 1.2;font-weight: 900;text-transform: uppercase;letter-spacing: 0.025em;color: #222222;
+}
+.text_offert span {
+    font-size: 30px;color: #f16d7f;
+}
+/*!div#offerts styling*/
