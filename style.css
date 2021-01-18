@@ -179,6 +179,6 @@ padding: 16px 20px 0 19px;
 #fetured-items>h2, #fetured-items>h5 {
     text-align: center;
 }
-#fetured-items>.flex-container.around>div> {
-}a 
-/*!fetured Items styling*/
+#fetured-items>.flex-container>div {
+    display: block;
+}
