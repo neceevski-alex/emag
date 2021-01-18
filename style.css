@@ -179,6 +179,33 @@ padding: 16px 20px 0 19px;
 #fetured-items>h2, #fetured-items>h5 {
     text-align: center;
 }
-#fetured-items>.flex-container>div {
+#fetured-items div.items {
+    width: 261px;
+    margin-top: 60px;
+    overflow-x: hidden;
+    position: relative;
+}
+#fetured-items .items>.prod-back {
+    width: 261px;
+    height: 280px;
+    background-color: #5a5758;
+}
+#fetured-items .items>.prod-back>a {
     display: block;
+    width: 123px;height: 39px;border: 1px solid #ffffff;
+    font-size: 13px;line-height: 39px;font-weight: 700;color: #ffffff;
+}
+#fetured-items .items>.prod-back>a>img {
+    display: inline-block;
+    position: relative;
+    top: 6px;
+}
+.name,.price {
+    margin: 18px 0 0 14px;
+}
+.name {
+    font-size: 13px;line-height: 1.2;font-weight: 400;text-transform: uppercase;color: #222222;
+}
+.price {
+    font-size: 16px;line-height: 1.2;font-weight: 700;text-transform: uppercase;color: #f16d7f;
 }
