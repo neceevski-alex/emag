@@ -56,6 +56,16 @@ footer {
     padding: 0 230px;
    /* margin: 50px 0;*/
 }
+@media screen  and (max-device-width:960px) {
+    .string {
+    padding: 0 120px;
+    }
+}
+@media screen  and (max-device-width:740px) {
+    .string {
+    padding: 0 30px;
+    }
+}
 /*
 .string.fist {margin-top: 0;}
 .string.last {margin-bottom: 0;}
@@ -111,12 +121,12 @@ header>div>* {display: inline-block; margin: auto 0}
 #browse {
     background-image: url("img/browse-bkgd.jpg");
     width: 87px;height: 38px;background-color: #cdcdcc; border: 1px solid #e6e6e6;border-radius: 3px 0px 0px 3px;
-    margin-left: 37px;
+    margin: 0 2px 0 37px;
     font-size: 14px;line-height: 38px;font-weight: 300;letter-spacing: 0.025em;
     padding-left: 14px;
 }
 form#search>input{display: inline-block;}
-form#search>input[name="term"] {width:280px; height: 38px;}
+form#search>input[name="term"] {width:280px; height: 38px; padding-left: 5px}
 form#search>input[type="image"] {
     position: relative;
     top: 15px;
@@ -224,9 +234,9 @@ background-color: #f16d7f;
     font-size: 16px;line-height: 48px;font-weight: 700;letter-spacing: 0.025em;color: #ffffff;
     text-align: center;
 }
-#offer-for-woman {margin-bottom: 100px; height: 529px;}
-#offer-for-woman>div {display:inline-block;}
-#offer-for-woman>#picture {
+#offer-for-woman {margin-bottom: 100px; min-height: 529px;}
+/*#offer-for-woman>div>div {display:inline-block;}*/
+#offer-for-woman #picture {
     width: 767px;
     height: 529px;
     position: relative;
@@ -239,18 +249,40 @@ background-color: #f16d7f;
     top: 145px;
     left: 40px;
 }
-#offer-for-woman>#offer-text {width: 373px; height: 529px; background-color: #222224;}
+#offer-for-woman #offer-text {width: 373px; height: 529px; background-color: #222224;}
 @media screen and (max-device-width: 1598px) {
-    #offer-for-woman>#offer-text {width: 100%;
+    #offer-for-woman #offer-text {width: 100%;
         max-width: 767px;
         height: auto;
+        padding-bottom: 10px;
     }
 }
-#offer-for-woman>#offer-text * {color: #fbfbfb;}
-#offer-for-woman>#offer-text>ul {
+#offer-for-woman #offer-text * {color: #fbfbfb;}
+#offer-for-woman #offer-text>ul {
     padding: 25px 25px 0 60px;
 }
-#offer-for-woman>#offer-text>ul>li {list-style-type: none;
+#offer-for-woman #offer-text>ul>li {list-style-type: none;
     
     font-size: 14px;line-height: 24px;font-weight: 300;letter-spacing: 0.025em;
+}
+#subsribe {
+    background-image: url(img/subscribe-bkgd.png);
+    height: 438px;
+}
+#burhan {width:500px}
+#burhan>* {display: inline-block; vertical-align: top;}
+#burhan>div {font-size: 16px;line-height: 26px;font-weight: 400;font-style: italic;letter-spacing: 0.025em;margin:12px 0 0  28px; width: 386px;}
+#subsribe form {font-size: 14px;line-height: 24px; width: 420px}
+#subsribe form input[type="email"] {
+    width: 282px;height: 46px;background-color: #e1e1e1;border-radius: 23px 0 0 23px;
+    padding-left: 28px;
+    border: 1px solid black;
+    display: inline-block;
+}
+#subsribe form input[type="submit"] {
+   font-size: 14px;line-height: 46px;font-weight: 400;letter-spacing: 0.025em;color: #ffffff;
+    background-color:#f16d7f;
+    width: 104px;height: 50px;
+    border-radius: 0 25px 25px 0
+    
 }
